@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+.wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    background: transparent;
+    border: 5px solid rgb(48, 38, 38);
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.wrapper:hover {
+    border: 5px solid cyan;
+    box-shadow: 0 0 20px #0ef, inset 0 0 20px #0ef;
+}
+
+h2{
+    font-size: 1.2cm;
+    text-align: center;
+    color: azure;
+}
+
+.wrapper:hover h2{
+    color: #0ef;
+}
+.input-box {
+    position: relative;
+    width: 320px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #333;
+    outline: none;
+    border-radius: 5px;
+    font-size: .4cm;
+    color: #fff;
+    padding: 0 10px 0 35px;
+    transition: 1s;
+}
+
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, .3);
+}
+
+.wrapper:hover .input-box input{
+    border: 2px solid #0ef;
+    box-shadow: 0 0 10px #0ef, inset 0 0 10px #0ef;
+}
+
+
+.input-box .icon{
+    position: absolute;
+    left: 10px;
+    color: #fff;
+    font-size: .7cm;
+    line-height: 52px;
+    transition: 2s;
+}
+
+.wrapper:hover .input-box .icon{
+    color: #0ef;
+}
+.forgot-password {
+    margin: -15px 0 15px;
+}
+
+.forgot-password a{
+    color: #fff;
+    font-size: .4cm;
+    text-decoration: none;
+}
+
+.forgot-password a:hover{
+    text-decoration: underline;
+}
+
+button {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background: #333;
+    border: none;
+    outline: none;
+    border: radius 5px;
+    cursor: pointer;
+    font: size 1cm;
+    color: #fff;
+    font-weight: 500;
+    transition: 2s;
+}
+
+.wrapper:hover button{
+    background: #0ef;
+    color: #000;
+    box-shadow: 0 0 20px #0ef;
+}
+.register-link{
+    font-size: .4cm;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.register-link p{
+    color: #fff;
+}
+
+.register-link p a{
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 2s;
+}
+
+.wrapper:hover .register-link  p a{
+    color: #0ef;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+    
+}
